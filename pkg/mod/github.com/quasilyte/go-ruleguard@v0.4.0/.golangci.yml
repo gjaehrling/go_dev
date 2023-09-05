@@ -1,0 +1,50 @@
+{
+  "run": {
+    # timeout for analysis, e.g. 30s, 5m, default is 1m
+    "deadline": "3m",
+  },
+  "fast": false,
+  "linters": {
+    "enable": [
+      "errcheck",
+      "gosec",
+      "gocritic",
+      "gofmt",
+      "goimports",
+      "govet",
+      "gosimple",
+      "ineffassign",
+      "misspell",
+      "nakedret",
+      "staticcheck",
+      "typecheck",
+      "unconvert",
+      "unparam",
+      "unused",
+    ],
+  },
+  "disable": [
+    "deadcode", # deprecated
+    "depguard",
+    "dupl",
+    "exhaustivestruct", # deprecated
+    "gocyclo",
+    "golint", # deprecated
+    "ifshort", # deprecated
+    "interfacer", # deprecated
+    "lll",
+    "maligned", # deprecated
+    "nosnakecase", # deprecated
+    "prealloc",
+    "scopelint", # deprecated
+    "structcheck", # deprecated
+    "varcheck", # deprecated
+  ],
+  "linters-settings": {
+    "gocritic": {
+      "enabled-checks": [
+        "commentedOutCode",
+      ],
+    },
+  },
+}
