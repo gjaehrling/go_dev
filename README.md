@@ -33,7 +33,6 @@ if has("autocmd")
   autocmd FileType go set ts=2 sw=2 sts=2 noet nolist autowrite
 endif
 ```
- 
 
 # libraries:
 
